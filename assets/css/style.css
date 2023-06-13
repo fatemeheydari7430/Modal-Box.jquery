@@ -1,0 +1,112 @@
+@font-face{
+    font-family:vazir-medium ;
+    src: url("../fonts/Vazir-Medium.eot") format("eot"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  *,
+  body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: vazir-medium;
+  }
+  
+  body{
+      direction: rtl;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+
+
+
+  body{
+    background-image: url(../img/background.jpg);
+}
+
+  .modal-link{
+    width: 100px;
+    height: 50px;
+    background-color: #efefef;
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 10px 1px rgba(128, 124, 124, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+  width: 600px;
+  min-height: 200px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 10px 1px rgba(128, 124, 124, .5);
+  padding: 15px;
+  border-radius: 3px;
+  z-index: 100;
+  display: none;
+}
+.modal form h6{
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+ }
+ .modal form input{
+  width: 100%;
+  height: 35px;
+  border: 1px solid #efefef;
+  padding: 0 10px;
+ }
+ .modal form input:focus{
+  outline-color: rgb(70, 156, 253);
+}
+.modal form label{
+  font-size: 14px;
+  margin: 3px;
+}
+.modal form a i{
+  margin-left: 10px;
+  color: rgb(70, 156, 253);
+}
+.modal form a{
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin: 20px 0;
+ }
+ .close{
+  position: absolute;
+  top: -12px;
+  right: -9px;
+}
+.bg-modal{
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 99;
+  position: fixed;
+  display: none;
+}
